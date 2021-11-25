@@ -2,6 +2,7 @@
 led python script, light up led's when an IP becomes live in LAN
 
 This is the initial code we were referenced to.
+This code can be found at https://gpiozero.readthedocs.io/en/stable/recipes_advanced.html#who-s-home-indicator
 
 ```
 from gpiozero import PingServer, LEDBoard
