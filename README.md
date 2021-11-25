@@ -37,4 +37,4 @@ pause()
 Link to (not best quality) demonstration video:- https://www.youtube.com/watch?v=nmkSPwR9rUE
 
 ### Commits
-Have added comments to both versions of the interface to explain the code process more clearly, MIT license has been added since initially did not add a license.   
+Have added comments to both versions of the interface to explain the code process more clearly, MIT license has been added since initially did not add a license, Readme has been updated to include link to demo of the Tkinter GUI and renaming the files to more clearly reflect their purpose.   
