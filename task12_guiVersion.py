@@ -1,3 +1,4 @@
+#Python Tkinter GUI for who's home, based on previous text menu interface.
 from gpiozero import PingServer, LED
 from time import sleep
 from tkinter import *
@@ -103,7 +104,7 @@ def mod_host_input():
         
 def who_is_home():
     try:
-        #If ip is updated, will need to be ran again
+        #If ip is updated, will need to be ran again to reflect updated values
         #generic person used and Pingserver uses ip list index to find values needed to ping
         person1 = PingServer(ip[0])
         person2 = PingServer(ip[1])
