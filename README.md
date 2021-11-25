@@ -4,7 +4,7 @@ led python script, light up led's when an IP becomes live in LAN
 6	TASK 12 - WHO IS HOME INDICATOR
 LED's were assigned to pins 23, 24 and 25. 
 
-Using PingServer, light up an LED if ping to an ip is successful.  Initial setup was simple enough, however the challenge was to add or modify an ip.  Based on the initial code, I decided to create both a text based menu interface and also a python Tkinter GUI.  Both versions use lists to store values as this is both easy and fast to implement changes while retaining order.
+Using PingServer, light up an LED if ping to an ip is successful.  Initial setup was simple enough, however the challenge was to add or modify an ip.  Based on the initial code, I decided to create both a text based menu interface and also a python Tkinter GUI.  Both versions use lists to store values as this is both easy and fast to implement changes while retaining order.  Lists are then combined into a dictionary to be output to console for user when required
 
 ## Base code
 
@@ -36,4 +36,5 @@ pause()
 ```
 Link to (not best quality) demonstration video:- https://www.youtube.com/watch?v=nmkSPwR9rUE
 
-
+### Commits
+Have added comments to both versions of the interface to explain the code process more clearly, MIT license has been added since initially did not add a license.   
