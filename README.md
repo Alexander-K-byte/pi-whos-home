@@ -8,7 +8,7 @@ Using PingServer, light up an LED if ping to an ip is successful.  Check the exa
 
 ## Thought Process
 Rather than just jump in to the above task I decided to implement this as a text-based interface, this way I could identify functions and then base my GUI from this.
-As can be seen from below, the base code was not very pliable when it comes to making alterations, my text based interface code is shown below base code, you can compare versions to see how much alteration was required. Users and IP values are now stored in 2 separate lists, those 2 lists are then combined to a single dictionary, this meant altering either IP or User was much easier to perform and retains correct order, once modifications were completed, lists were then recompiled to a dictionary which could be printed to console to check the current stored values.
+As can be seen from below, the base code was not very pliable when it comes to making alterations, my text based interface code is shown below base code, you can compare versions to see how much I altered original recipe to fit the purpose.  Users and IP values are now stored in 2 separate lists, those 2 lists are then combined to a single dictionary, this meant altering either IP or User was much easier to perform and retains correct order, once modifications were completed, lists were then recompiled to a dictionary which could be printed to console to check the current stored values, with the text based version completed and working, I then used the functions to build a working GUI.
 
 ## Base code
 https://gpiozero.readthedocs.io/en/stable/recipes_advanced.html#who-s-home-indicator
