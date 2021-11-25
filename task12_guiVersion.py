@@ -4,7 +4,7 @@ from time import sleep
 from tkinter import *
 import tkinter.messagebox
 
-#create the initial Window for our GUI
+#create the initial Window for the GUI
 window = Tk()
 window.title("Who's home LED indicator")
 window.geometry("400x320")
@@ -16,6 +16,7 @@ user = ['Toni', 'Alex', 'Slava']
 #Define global dictionary from the lists
 hosts = dict(zip(user, ip))
 
+#assign pins to LEDs
 red=LED(23)
 green=LED(24)
 yellow=LED(25)
@@ -28,7 +29,7 @@ def close():
     quit()
     
 def show_all():
-    #print output of the 2 lists stored in global dictionary
+    #print output of the 2 lists stored in global dictionary to console
     print("These are the current users: \n")
     print(hosts)
     
@@ -104,8 +105,8 @@ def mod_host_input():
         
 def who_is_home():
     try:
-        #If ip is updated, will need to be ran again to reflect updated values
-        #generic person used and Pingserver uses ip list index to find values needed to ping
+        #If ip or user is updated, will need to be ran again to reflect updated values
+        #generic user used and Pingserver uses ip list index to find values needed to ping
         person1 = PingServer(ip[0])
         person2 = PingServer(ip[1])
         person3 = PingServer(ip[2])
