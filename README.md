@@ -1,14 +1,14 @@
 # pi-whos-home
-led python script, light up led's when an IP becomes live in LAN
+(Completed) Led python script, light up led's when an IP becomes live in LAN
 
 WHO IS HOME INDICATOR
 LED's were assigned to pins 23, 24 and 25. 
 
-Using PingServer, light up an LED if ping to an ip is successful.  Check the example code (Base code) and configure a GUI to modify IP.  
+Using PingServer, light up an LED if ping to an ip is successful.  Check the example code (Base code) and configure a GUI to modify the IP.  
 
 ## Thought Process
 Rather than just jump in to the above task I decided to implement this as a text-based interface, this way I could identify functions and then base my GUI from this.
-As can be seen from below, the base code was not very pliable when it comes to making alterations, my text based interface code is shown below base code, you can compare versions to see how much I altered original recipe to fit the purpose.  Users and IP values are now stored in 2 separate lists, those 2 lists are then combined to a single dictionary, this meant altering either IP or User was much easier to perform and retains correct order, once modifications were completed, lists were then recompiled to a dictionary which could be printed to console to check the current stored values, with the text based version completed and working, I then used the functions to build a working GUI.
+As can be seen from below, the base code was not very pliable when it comes to making alterations, so I redesigned the code to modify users and IP values.  Text based interface code is shown below base code, you can compare versions to see how much difference there is to original recipe.  Users and IP values are now stored in 2 separate lists, those 2 lists are then combined to a single dictionary, this meant altering either IP or User was much easier to perform and retains correct order, once modifications were completed, lists were then recompiled to a dictionary which could be printed to console to check the current stored values, with the text based version completed and working, I then used the functions to build a working GUI.  This went a little beyond the scope of the original scenario but I like to think my version is much easier to change and offers a lot more functionality.
 
 ## Base code
 https://gpiozero.readthedocs.io/en/stable/recipes_advanced.html#who-s-home-indicator
