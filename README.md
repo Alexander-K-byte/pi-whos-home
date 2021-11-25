@@ -1,6 +1,8 @@
 # pi-whos-home
 led python script, light up led's when an IP becomes live in LAN
 
+This is the initial code we were referenced to.
+
 ```
 from gpiozero import PingServer, LEDBoard
 from gpiozero.tools import negated
@@ -25,3 +27,9 @@ for server, leds in statuses.items():
 
 pause()
 ```
+
+From this code I came up with 2 versions of code, the first was a text based menu interface,
+the second version was a Tkinter GUI.  
+
+Both versions allow the user to change the name/IP to check while script is running.
+Values are stored in list.
