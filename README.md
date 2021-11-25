@@ -1,8 +1,14 @@
 # pi-whos-home
 led python script, light up led's when an IP becomes live in LAN
 
-This is the initial code we were referenced to.
-This code can be found at https://gpiozero.readthedocs.io/en/stable/recipes_advanced.html#who-s-home-indicator
+6	TASK 12 - WHO IS HOME INDICATOR
+LED's were assigned to pins 23, 24 and 25. 
+
+Using PingServer, light up an LED if ping to an ip is successful.  Initial setup was simple enough, however the challenge was to add or modify an ip.  Based on the initial code, I decided to create both a text based menu interface and also a python Tkinter GUI.  Both versions use lists to store values as this is both easy and fast to implement changes while retaining order.
+
+## Base code
+
+https://gpiozero.readthedocs.io/en/stable/recipes_advanced.html#who-s-home-indicator
 
 ```
 from gpiozero import PingServer, LEDBoard
@@ -28,9 +34,6 @@ for server, leds in statuses.items():
 
 pause()
 ```
+Link to (not best quality) demonstration video:- https://www.youtube.com/watch?v=nmkSPwR9rUE
 
-From this code I came up with 2 versions of code, the first was a text based menu interface,
-the second version was a Tkinter GUI.  
 
-Both versions allow the user to change the name/IP to check while script is running.
-Values are stored in list.
