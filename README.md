@@ -8,7 +8,7 @@ Using PingServer, light up an LED if ping to an ip is successful.  Check the exa
 
 ## Thought Process
 Rather than just jump in to the above task I decided to implement this as a text-based interface, this way I could identify functions and then base my GUI from this.
-As can be seen from below, the base code was not very pliable when it comes to making alterations, my text based interface code is shown below this, so I decided to redesign it, users and IP values are now stored in 2 separate lists, those 2 lists are then combined to a single dictionary, this meant altering either IP or User was much easier to perform and retains correct order, once modifications were completed, lists were then recompiled to a dictionary which could be printed to console to check the current stored values.
+As can be seen from below, the base code was not very pliable when it comes to making alterations, my text based interface code is shown below base code, you can compare versions to see how much alteration was required. Users and IP values are now stored in 2 separate lists, those 2 lists are then combined to a single dictionary, this meant altering either IP or User was much easier to perform and retains correct order, once modifications were completed, lists were then recompiled to a dictionary which could be printed to console to check the current stored values.
 
 ## Base code
 https://gpiozero.readthedocs.io/en/stable/recipes_advanced.html#who-s-home-indicator
@@ -37,7 +37,6 @@ for server, leds in statuses.items():
 
 pause()
 ```
-Link to (not best quality) demonstration video of Tkinter GUI:- https://www.youtube.com/watch?v=nmkSPwR9rUE
 
 ## Text menu interface code
 ```
@@ -167,6 +166,10 @@ while loop:
         print("Incorrect value used. Try again")
 ```
 
+## Demo of Tkinter GUI code 
+
+Link to (not best quality) demonstration video of Tkinter GUI:- https://www.youtube.com/watch?v=nmkSPwR9rUE
+
 
 ### Commits
-Have added comments to both versions of the interface to explain the code process more clearly, MIT license has been added since initially did not add a license, Readme has been updated to include link to demo of the Tkinter GUI and renaming the files to more clearly reflect their purpose.   
+Have added comments to both versions of the interface to explain the code process more clearly, MIT license has been added since initially did not add a license, Readme has been updated to include link to demo of the Tkinter GUI from youtube, and renaming the files to more clearly reflect their task.   
